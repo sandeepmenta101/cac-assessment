@@ -1,38 +1,64 @@
 .App {
+  margin: 0 1rem;
+}
+
+:root {
+  --black-background-color: #000;
+  --yellow-font-color: yellow;
+  --white-color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: "Codystar", cursive;
+  font-size: 16px;
+  background-color: var(--black-background-color);
+}
+
+h1,
+p,
+h4,
+h3,
+h2 {
+  color: var(--yellow-font-color);
   text-align: center;
+  font-size: 4rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4,
+h3,
+h2 {
+  font-size: 0.8rem;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin-top: 3rem;
+}
+
+.fetch-starships {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.fetch-starships button {
+  background-color: var(--yellow-font-color);
+  color: var(--black-background-color);
+  font-size: 1.2rem;
+  padding: 8px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fetch-starships button:hover {
+  border: 1px solid var(--yellow-font-color);
+  color: var(--black-background-color);
+  background-color: var(--white-color);
 }
