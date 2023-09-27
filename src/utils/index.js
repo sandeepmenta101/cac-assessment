@@ -22,7 +22,7 @@ export const filterTheStarShipsBasedOnFilmsAppeared = (starShips) => {
       if(starShip.films.length > maxFilmsAppearedVehicle){
         maxFilmsAppearedVehicle = starShip.films.length;
       }
-      return { ...starShip, crew: Number(crewNumber) };
+      return true;
     }
   }).map((record) => {
     return {
